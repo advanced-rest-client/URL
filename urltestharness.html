@@ -5,7 +5,9 @@
 <script src=testharness.js></script>
 <script src=testharnessreport.js></script>
 <script src=urltestparser.js></script>
-<script>forceJURL = true;</script>
+<script>
+window.forceJURL = true;
+</script>
 <script src="url.js"></script>
 <div id=log></div>
 <script>
@@ -41,7 +43,7 @@ function bURL(url, base) {
 
 function runURLTests(raw) {
   var urltests = URLTestParser(raw)
-  for(var i = 0, l = urltests.length; i < l; i++) {
+  for (var i = 0, l = urltests.length; i < l; i++) {
     var expected = urltests[i]
     test(function() {
       var url = bURL(expected.input, expected.base)
