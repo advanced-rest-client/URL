@@ -1,6 +1,7 @@
 {
   "name": "url",
   "main": "url.js",
+  "version": "0.6.1",
   "homepage": "https://github.com/Polymer/URL",
   "authors": [
     "https://github.com/Polymer/URL/graphs/contributors"
@@ -23,17 +24,8 @@
     "node_modules",
     "bower_components"
   ],
-  "dependencies": {
-    "polymer": "Polymer/polymer#^1.9.2"
-  },
-  "devDependencies": {
-    "iron-component-page": "polymerelements/iron-component-page#1.0.0",
-    "web-component-tester": "^6.0.0",
-    "paper-styles": "polymerelements/paper-styles#^1.0.2",
-    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
-    "iron-test-helpers": "PolymerElements/iron-test-helpers#^1.4.0",
-    "test-fixture": "PolymerElements/test-fixture#^3.0.0",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
-  },
-  "version": "0.6.0"
+  "files": [
+    "url.js",
+    "url-polyfill.html"
+  ]
 }
